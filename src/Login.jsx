@@ -35,7 +35,7 @@ const LoginPage = () => {
           toast.success(response.message);
           localStorage.setItem(
             "x-access-token",
-            "Bearer " + response.data.token
+           response.data.token
           );
           navigate("/add-blog");
         } else {
